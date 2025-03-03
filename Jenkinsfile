@@ -16,7 +16,7 @@ pipeline{
         }
         stage("Push to DockerHub"){
             steps{
-                dockerpush("ishansharmaisu","notes-app","latest")
+                dockerpush("dockerHubCreds","notes-app","latest")
             }
         }
         stage("Deploy"){
